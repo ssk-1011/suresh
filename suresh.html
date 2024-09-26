@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        .content-card{
+            padding: 50px;
+            background-color: white;
+            font-family: sans-serif;
+            
+        }
+        .bg-heading{
+            color:black;
+            text-align:center;
+            font-family:"Roboto";
+            font-size:30px;
+        }
+        .bg-container{
+            background-color:lightblue;
+            border:1px solid rgb(56, 56, 96);
+            border-radius:8px;
+            padding:10px;
+        }
+        .heading{
+            color:black;
+            font-weight:bold;
+            text-align:center;
+        }
+        .employee{
+            width:100%;
+            height:50px;
+            border-radius:6px;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        .full-name{
+            font-family:"Roboto";
+            color:black;
+            margin-bottom:30px;
+            font-weight:bold;
+            font-size:24px;
+        }
+        .button{
+            display:flex;
+            justify-content:center;
+            text-align:center;
+
+        }
+        .register{
+            background-color:rgb(72, 72, 237);
+            height:40px;
+            width:100%;
+            border-radius:6px;
+            color:white;
+            border:0px;
+            margin-top:10px;
+            font-size:18px;
+        }
+        .list-container{
+            background-color:#edeeee;
+            border:1px solid #ddd;
+            padding:10px;
+            border-radius:8px;
+            margin:20px auto;
+        }
+        .employe-details{
+            background-color: white;
+            text-align: center;
+        }
+        .employee-ol{
+            text-decoration:none;
+            color:#004d99;
+        }
+        .employee-bg{
+            color:#003366;
+            text-decoration:underline;
+
+        }
+        table{
+            width:100%;
+            border-collapse:collapse;
+            
+        }
+        .th,td{
+            padding:20px;
+            text-align:left;
+            border:1px solid #ffffff;
+            
+
+
+        }
+        thead{
+            background-color:#004d99;
+            color:white;
+        }
+        tbody tr:nth-child(even){
+            background-color:#f2f2f2;
+        }
+        td img{
+            width:100%;
+            height:50px;
+            border-radius:50%;
+        }
+        .bg-profile-pic{
+            border: 2px solid lightblue;
+            background-color: lightblue;;
+            border-radius: 40px;
+            width: 50px;
+            
+        }
+        .location-card{
+            width: 100%;
+            text-align: center;
+        }
+        .map-img-size{
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container shadow content-card">
+        
+    <h1 class="bg-heading">Company Directory Portal</h1>
+    <div class="bg-container shadow">
+        <h1 class="heading">Employee Registration Form</h1>
+        <form>
+            <label for="name" class="full-name">Full Name:</label><br>
+            <input type="text" id="name" name="name" class="employee"><br>
+            <label for="email" class="email">Email:</label><br>
+            <input type="text" id="email" name="email" class="employee"><br>
+            <label for="department">Department:</label><br>
+            <select id="department" class="employee">
+                <option value="HR" class="employee">HR</option>
+                <option value="IT" class="employee">IT</option>
+                <option value="Finance" class="employee">Finance</option>
+
+            </select><br>
+            <label for="employeeId">Employee ID:</label><br>
+            <input type="number" id="employeeId" name="employeeId" class="employee"><br>
+            <label for="profile">Profile Picture URL:</label><br>
+            <input type="url" id="profile" name="profile" class="employee"><br>
+            <div class="button"> 
+               <button type="submit" class="register">Register Employee</button>
+            </div>   
+        </form>
+    </div>
+    <div class="list-container shadow">
+        <h2 class="heading">Employee List</h2>
+        <ol>
+            <li class="employee-ol"><a href="mail:sureshakhi1115@gmail.com">Suresh-sureshakhi1115@gmail.com</a></li>
+            <hr>
+            <li class="employee-bg"><a href="mail:sureshakhi01@gmail.com">suresh kumar-sureshakhi01@gmail.com</a></li>
+            <hr>
+        </ol>
+    </div>
+    <div class="employe-details shadow">
+        <h1>Employee Details</h1>
+        <div><table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Suresh</td>
+                    <td>200</td>
+                    <td>IT</td>
+                    <td><img src="https://img.freepik.com/premium-vector/profile-pic-icon-colored-shapes-gradient_1076610-46028.jpg?" class="bg-profile-pic" alt=""></td>
+                </tr>
+                <tr>
+                    <td>Suresh kumar</td>
+                    <td>500</td>
+                    <td>HR</td>
+                    <td ><img src="https://img.freepik.com/premium-vector/profile-pic-icon-colored-shapes-gradient_1076610-46028.jpg?" class="bg-profile-pic" alt=""></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+    <div class="location-card shadow">
+        <h2>Company Location</h2>
+        <iframe class="map-img-size" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28253.981310632655!2d78.380794603148!3d17.509270835303536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1727321806638!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</div>
+</body>
+</html>
